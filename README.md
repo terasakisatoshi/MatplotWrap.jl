@@ -12,6 +12,8 @@
 
 - install `gnuplot` via e.g. `brew install ...` or `apt-get install ...` etc..
   - See [this instruction](https://github.com/alandefreitas/matplotplusplus#build-from-source) to learn more.
+- Linux users should update your gcc >= 8
+  - See [this instruction](https://github.com/alandefreitas/matplotplusplus#build-from-source)
 
 ## Install this repository
 
