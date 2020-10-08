@@ -4,7 +4,7 @@
   - Matplot++: A C++ Graphics Library for Data Visualization
   - Julia: A fresh approach to technical computing
   
-- It is tested on my macOS with Julia v1.5.1
+- It is tested on my macOS/Ubuntu(18.04) with Julia v1.5.1
 
 # Prerequisite
 
