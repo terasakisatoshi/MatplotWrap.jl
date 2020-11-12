@@ -1,6 +1,7 @@
+#include <vector>
+
 #include <jlcxx/jlcxx.hpp>
 #include <matplot/matplot.h>
-#include <vector>
 
 using namespace jlcxx;
 
