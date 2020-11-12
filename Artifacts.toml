@@ -13,5 +13,5 @@ libc = "glibc"
 os = "linux"
 
     [[libmplxx.download]]
-    sha256 = "fbf3dab447ba7a2501dfca9e258d50ee5a9d3c8cc25a182fe4ab40186c3d4cca"
-    url = "https://github.com/terasakisatoshi/MatplotWrapBuilder.jl/releases/download/v0.1.1/Binary.Packages.Linux.zip"
+    sha256 = "b28efca2e46e894abb5aa270ed56e2050240cb72151a1bba511903c52baebbac"
+    url = "https://github.com/terasakisatoshi/MatplotWrapBuilder.jl/releases/download/v0.1.1/Binary.Packages.Linux.tar.gz"
