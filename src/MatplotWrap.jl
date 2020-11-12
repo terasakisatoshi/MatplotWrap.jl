@@ -2,10 +2,13 @@ __precompile__(false)
 
 module MatplotWrap
 
-const _ext = @static Sys.isapple() ? "dylib" : "so"
+using Libdl
+using Pkg.Artifacts
 
 using CxxWrap
-const libmplxx = joinpath(@__DIR__, "..", "deps", "build", "lib", "libmplxx.$(_ext)")
+
+#const libmplxx = joinpath(@__DIR__, "..", "deps", "build", "lib", "libmplxx.$(_ext)")
+const libmplxx = joinpath(artifact"libmplxx","libmplxx.$(Libdl.dlext)")
 isfile(libmplxx) && @wrapmodule(libmplxx, :define_julia_module)
 
 export plot, plot3, scatter, matplot_show
