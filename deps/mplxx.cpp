@@ -1,12 +1,14 @@
+#include <vector>
+
 #include <jlcxx/jlcxx.hpp>
 #include <matplot/matplot.h>
-#include <vector>
 
 using namespace jlcxx;
 
 void plot_wrap(std::vector<double> &x, std::vector<double> &y, std::string line_spec = "")
 {
-  matplot::plot(x, y, line_spec);
+  std::string_view view{ line_spec }; //convert string to string_view
+  matplot::plot(x, y, view);
 }
 
 void plot3_wrap(std::vector<double> &x, std::vector<double> &y, std::vector<double> &z)

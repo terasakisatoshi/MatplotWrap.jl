@@ -1,7 +1,7 @@
 name = "MatplotWrap"
 uuid = "24750ae3-7935-4989-81f1-c919b832b570"
 authors = ["Satoshi Terasaki <terasakisatoshi.math@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"

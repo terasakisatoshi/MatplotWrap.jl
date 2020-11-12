@@ -1,5 +1,6 @@
+__precompile__(false)
+
 module MatplotWrap
-using CxxWrap
 
 const _ext = @static Sys.isapple() ? "dylib" : "so"
 
@@ -10,8 +11,8 @@ isfile(libmplxx) && @wrapmodule(libmplxx, :define_julia_module)
 export plot, plot3, scatter, matplot_show
 
 function plot(_x::AbstractVector{T1}, _y::AbstractVector{T2}, line_spec::AbstractString="") where {T1,T2 <: Real}
-    x = convert.(Float64, _x) |> StdVector
-    y = convert.(Float64, _y) |> StdVector
+    x = convert.(Cdouble, _x) |> StdVector
+    y = convert.(Cdouble, _y) |> StdVector
     plot(x, y, StdString(line_spec))
 end
 
@@ -21,15 +22,15 @@ function plot(_y::AbstractVector{T}, line_spec::AbstractString="") where {T <: R
 end
 
 function plot3(_x::AbstractVector{T1}, _y::AbstractVector{T2}, _z::AbstractVector{T3}) where {T1,T2,T3 <: Real}
-    x = convert.(Float64, _x) |> StdVector
-    y = convert.(Float64, _y) |> StdVector
-    z = convert.(Float64, _z) |> StdVector
+    x = convert.(Cdouble, _x) |> StdVector
+    y = convert.(Cdouble, _y) |> StdVector
+    z = convert.(Cdouble, _z) |> StdVector
     plot3(x, y, z)
 end
 
 function scatter(_x::AbstractVector{T1}, _y::AbstractVector{T2}) where {T1,T2 <: Real}
-    x = convert.(Float64, _x) |> StdVector
-    y = convert.(Float64, _y) |> StdVector
+    x = convert.(Cdouble, _x) |> StdVector
+    y = convert.(Cdouble, _y) |> StdVector
     scatter(x, y)
 end
 
