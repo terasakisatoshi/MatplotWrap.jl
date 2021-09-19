@@ -53,5 +53,5 @@ $ make -C ./deps
 
 ```julia
 # Use this variable
-const libmplxx = joinpath(@__DIR__, "..", "deps", "build", "lib", "libmplxx.$(_ext)")
+const libmplxx = joinpath(@__DIR__, "..", "deps", "build", "lib", "libmplxx.$(dlext)")
 ```
