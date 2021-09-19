@@ -1,17 +1,17 @@
 [[libmplxx]]
 arch = "x86_64"
-git-tree-sha1 = "7744f0719758a79793187f8d0ec21133c3f3a882"
+git-tree-sha1 = "85442c45188f79d3e83a0c53ce9e1503df0f46a2"
 os = "macos"
 
     [[libmplxx.download]]
-    sha256 = "56c10af8cddda0a2e09d8e1c968ae1a3d4e9cac9d38bb6acee82c31531822d31"
-    url = "https://github.com/terasakisatoshi/MatplotWrapBuilder.jl/releases/download/v0.1.1/Binary.Packages.MacOSX.zip"
+    sha256 = "5cd9a4254001b25a841a4f8a06a5bc739030ad7daa65737994a7a4578051ea10"
+    url = "https://github.com/terasakisatoshi/MatplotWrapBuilder.jl/releases/download/v0.2.0/Binary.Packages.MacOSX.tar.gz"
 [[libmplxx]]
 arch = "x86_64"
-git-tree-sha1 = "75f221ceaad2f03f5851de233f3633b6eb10cbd2"
+git-tree-sha1 = "e4c411290896e6276422d912a2a06130aed42628"
 libc = "glibc"
 os = "linux"
 
     [[libmplxx.download]]
-    sha256 = "b28efca2e46e894abb5aa270ed56e2050240cb72151a1bba511903c52baebbac"
-    url = "https://github.com/terasakisatoshi/MatplotWrapBuilder.jl/releases/download/v0.1.1/Binary.Packages.Linux.tar.gz"
+    sha256 = "b16256fe3cede4cfe35635dda8475da63ad911d1170a50d5d3a2759d335dd450"
+    url = "https://github.com/terasakisatoshi/MatplotWrapBuilder.jl/releases/download/v0.2.0/Binary.Packages.Linux.tar.gz"
